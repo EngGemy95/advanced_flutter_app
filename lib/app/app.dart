@@ -22,37 +22,3 @@ class _MyAppState extends State<MyApp> {
     return Container();
   }
 }
-
-class Test extends StatelessWidget {
-  const Test({Key? key}) : super(key: key);
-
-  void updateAppState() {
-    MyApp().appState = 11;
-  }
-
-  void getAppState() {
-    print(MyApp().appState); // 11
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class Test2 extends StatelessWidget {
-  const Test2({Key? key}) : super(key: key);
-
-  void updateAppState() {
-    MyApp().appState = 11;
-  }
-
-  void getAppState() {
-    print(MyApp().appState); // 11
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
