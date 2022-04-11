@@ -17,11 +17,42 @@ TextStyle _getTextStyle(double fontSize, FontWeight fontWeight, Color color) {
   );
 }
 
+//light Style
+TextStyle getLightStyle({
+  double fontSize = FontSize.s12,
+  required Color color,
+}) {
+  return _getTextStyle(fontSize, FontWeightManager.light, color);
+}
+
 //Regular Style
 TextStyle getRegularStyle({
   double fontSize = FontSize.s12,
-  FontWeight fontWeight = FontWeightManager.regular,
   required Color color,
 }) {
-  return _getTextStyle(fontSize, fontWeight, color);
+  return _getTextStyle(fontSize, FontWeightManager.regular, color);
+}
+
+//Medium Style
+TextStyle getMediumStyle({
+  double fontSize = FontSize.s14,
+  required Color color,
+}) {
+  return _getTextStyle(fontSize, FontWeightManager.medium, color);
+}
+
+//semiBold Style
+TextStyle getSemiBoldStyle({
+  double fontSize = FontSize.s14,
+  required Color color,
+}) {
+  return _getTextStyle(fontSize, FontWeightManager.semiBold, color);
+}
+
+//Bold Style
+TextStyle getBoldStyle({
+  double fontSize = FontSize.s14,
+  required Color color,
+}) {
+  return _getTextStyle(fontSize, FontWeightManager.bold, color);
 }
